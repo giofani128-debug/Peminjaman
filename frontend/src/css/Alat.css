@@ -1,0 +1,150 @@
+/* ================= PAGE ================= */
+.alat-page {
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ================= TITLE ================= */
+.alat-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+/* ================= FORM ================= */
+.alat-form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr auto;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.alat-form input,
+.alat-form select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.alat-form input:focus,
+.alat-form select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+.alat-form button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.alat-form button:hover {
+  background: #1d4ed8;
+}
+
+/* ================= TABLE WRAPPER ================= */
+.alat-table-wrapper {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow-x: auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ================= TABLE ================= */
+.alat-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.alat-table thead {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.alat-table th,
+.alat-table td {
+  padding: 14px 16px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.alat-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.alat-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* ================= KONDISI ================= */
+.kondisi {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.kondisi.baik {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.kondisi.rusak {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.kondisi.perluperbaikan {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* ================= AKSI ================= */
+.aksi {
+  display: flex;
+  gap: 8px;
+}
+
+.aksi button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.aksi button:first-child {
+  background: #facc15;
+  color: #78350f;
+}
+
+.aksi button:last-child {
+  background: #ef4444;
+  color: #fff;
+}
+
+.aksi button:hover {
+  opacity: 0.85;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .alat-form {
+    grid-template-columns: 1fr;
+  }
+}

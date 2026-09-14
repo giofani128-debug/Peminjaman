@@ -1,0 +1,106 @@
+/* ===== PAGE ===== */
+.peminjaman-page {
+  padding: 20px;
+}
+
+.peminjaman-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* ===== FORM ===== */
+.peminjaman-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.peminjaman-form input,
+.peminjaman-form select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.peminjaman-form button {
+  grid-column: span 2;
+  padding: 10px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.peminjaman-form button:hover {
+  background: #1e40af;
+}
+
+/* ===== TABLE ===== */
+.peminjaman-table-wrapper {
+  overflow-x: auto;
+}
+
+.peminjaman-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.peminjaman-table th,
+.peminjaman-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.peminjaman-table th {
+  background: #f3f4f6;
+}
+
+/* ===== STATUS ===== */
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.dipinjam {
+  background: #fde68a;
+  color: #92400e;
+}
+
+.status.dikembalikan {
+  background: #bbf7d0;
+  color: #065f46;
+}
+
+/* ===== AKSI ===== */
+.aksi {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.aksi button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.aksi button:first-child {
+  background: #facc15;
+}
+
+.aksi button:last-child {
+  background: #ef4444;
+  color: white;
+}

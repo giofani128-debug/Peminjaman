@@ -1,0 +1,52 @@
+.laporan-page {
+  padding: 20px;
+}
+
+.laporan-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.laporan-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.laporan-filter input,
+.laporan-filter select {
+  padding: 6px;
+}
+
+.laporan-filter button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.laporan-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.laporan-table th,
+.laporan-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.laporan-table th {
+  background: #f3f4f6;
+}
+
+@media print {
+  .laporan-filter {
+    display: none;
+  }
+}
